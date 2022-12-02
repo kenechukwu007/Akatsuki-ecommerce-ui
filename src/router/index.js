@@ -7,6 +7,8 @@ import AdminPanel from '../views/AdminPanel.vue'
 import ProductPage from '../views/ProductManager/ProductPage.vue'
 import CreateProduct from '../views/ProductManager/CreateProduct.vue'
 import EditCategory from '../views/CatManager/EditCategory.vue'
+import RegisterPage from '../views/RegisterPage.vue'
+import LoginPage from '../views/LoginPage.vue'
 
 Vue.use(VueRouter)
 
@@ -58,6 +60,18 @@ const routes = [{
     path: '/admit/category/:id',
     name: 'EditCategory',
     component: EditCategory
+  },
+
+  {
+    path: '/register',
+    name: 'RegisterPage',
+    component: RegisterPage
+  },
+
+  {
+    path: '/login',
+    name: 'LoginPage',
+    component: LoginPage
   }
 
 

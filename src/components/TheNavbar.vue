@@ -35,7 +35,17 @@
           </div>
         </div>
       </form>
-      <router-link :to="{ name: 'Admin' }"> Admin </router-link>
+      <!-- <router-link :to="{ name: 'Admin' }"> Admin </router-link> -->
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="nav-user">User</a>
+            <div class="dropdown-menu" aria-labelledby="nav-user">
+                <router-link :to="{name: 'RegisterPage'}" class="dropdown-item">Register here</router-link>
+                <router-link :to="{name: 'LoginPage'}" class="dropdown-item">Log In</router-link>
+            </div>
+        </li>
+      </ul>
+      
     </div>
   </nav>
     <!-- <v-app-bar app color="#EFF02" dark>
@@ -90,6 +100,10 @@ export default {
     font-size: 12px !important;
     height: 20px !important;
     min-width: 20px !important;
+}
+
+.nav-link {
+    color: wheat;
 }
 
 </style>
