@@ -42,6 +42,7 @@
             <div class="dropdown-menu" aria-labelledby="nav-user">
                 <router-link :to="{name: 'RegisterPage'}" class="dropdown-item">Register here</router-link>
                 <router-link :to="{name: 'LoginPage'}" class="dropdown-item">Log In</router-link>
+                <router-link :to="{name: 'Admin'}" class="dropdown-item">Admin</router-link>
             </div>
         </li>
       </ul>
